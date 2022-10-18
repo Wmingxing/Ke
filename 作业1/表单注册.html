@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单注册</title>
+</head>
+<!-- <style>
+    .user {
+        margin-left: 40%;
+        margin-top: 10px;
+    }
+    
+    a {
+        margin-left: 40%;
+    }
+</style> -->
+<style>
+    table {
+        margin: auto;
+        background-color: rgb(215, 215, 235);
+    }
+    
+    h2 {
+        text-align: center;
+        background-color: beige;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    #mbox {
+        margin: auto;
+        width: 100%;
+        height: 10px;
+        margin-left: 35%;
+    }
+    
+    .box {
+        width: 100px;
+        height: 20px;
+        border: 1px solid red;
+        float: left;
+        text-align: center;
+    }
+    
+    .first {
+        width: 100px;
+        height: 20px;
+        border: 1px solid red;
+        float: left;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div id="mbox">
+        <div class="box">
+            <a href="../作业1/表单注册.html">实验一 </a></div>
+        <div class="box">
+            <a href="../作业2/表格排列.html">实验二</a></div>
+        <div class="box">
+            <a href="../作业3/导航栏.html">实验三</a></div>
+        <div class="box">
+            <a href="../作业3/页脚广告.html">实验四</a></div>
+        <div class="box">
+            <a href="../天气预报/天气预报.html">实验五</a></div>
+        <div class="first">
+            <a href="../html/个人简介.html">
+                <div id="per">返回主页</div>
+            </a>
+        </div>
+    </div>
+    <h2>个人信息填写</h2>
+    <table border="0" cellpadding="0" width="500px" height="80px">
+
+        <form>
+
+            <tr>
+                <td width="50px">姓名:</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+            <tr>
+                <td>密码:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>性别:</td>
+                <td><input type="radio" name="sex" value="男">男
+                    <input type="radio" name="sex" value="女">女</td>
+            </tr>
+            <tr>
+                <td>兴趣:</td>
+                <td><input type="checkbox" name="hobby">吃饭
+                    <input type="checkbox" name="hobby">睡觉
+                    <input type="checkbox" name="hobby">打豆豆
+                    <input type="checkbox" name="hobby">学习
+                </td>
+            </tr>
+            <tr>
+                <td>生日:</td>
+                <td><input type="date" name="bday"></td>
+            </tr>
+            <tr>
+                <td>学历:</td>
+                <td>
+                    <select>
+                    <option>大学</option>
+                    <option>高中</option>
+                    <option>初中</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="../作业1/success.html"><input type="submit" value="注册"></a>
+                </td>
+            </tr>
+        </form>
+    </table>
+    <br><br>
+
+
+
+</body>
+
+</html>

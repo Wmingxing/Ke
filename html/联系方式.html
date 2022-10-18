@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系方式</title>
+</head>
+<style>
+    body {
+        background-color: blanchedalmond;
+    }
+    
+    .tele {
+        font-size: 40px;
+        color: rgb(131, 110, 82);
+        text-align: center;
+    }
+    
+    .location {
+        margin-top: 100px;
+        margin-left: 400px;
+    }
+    
+    .message {
+        margin-left: 700px;
+        margin-top: -85px;
+    }
+    
+    .wechat {
+        margin-left: 1000px;
+        margin-top: -85px;
+    }
+    
+    #demo,
+    #demo1,
+    #demo2 {
+        border: none;
+        font-size: 30px;
+    }
+    
+    .box1 {
+        height: 300px;
+        width: 1000px;
+        border: 1px red solid;
+        margin: 0 auto;
+    }
+    
+    ul {
+        height: 100%;
+        list-style: none;
+    }
+    
+    .first {
+        float: left;
+        font-size: 20px;
+        margin-left: 40%;
+        color: rgb(31, 58, 209);
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    #per {
+        font-size: 20px;
+        float: left;
+        margin-left: 20px;
+        color: rgb(31, 58, 209);
+    }
+</style>
+
+<body>
+
+    <div class="first">
+        <a href="个人简介.html">
+            <div id="per">主页</div>
+        </a>
+    </div>
+    <a href="https://www.zzut.edu.cn/">
+        <div id="per">我的学校</div>
+    </a>
+    <a href="我的班级.html">
+        <div id="per">我的班级</div>
+    </a>
+    <a href="我的宿舍.html">
+        <div id="per">我的宿舍</div>
+    </a>
+    <a href="联系方式.html">
+        <div id="per">联系方式</div>
+    </a>
+    <a href="所学课程.html">
+        <div id="per">所学课程</div>
+    </a>
+    <a href="兴趣爱好.html">
+        <div id="per">兴趣爱好</div>
+    </a>
+    <a href="完成实验.html">
+        <div id="per">完成实验</div>
+    </a>
+    <br>
+    <br>
+    <div class="tele">联系方式</div>
+    <hr width="80px" style="border: 1px solid rgb(14, 12, 163);">
+
+    <div class="location">
+        <img src="../pictures/location.webp" width="40px" height="40px" style="margin-left: 45px;"><br>
+        <button id="demo" type="button" onclick="myFunction()">我的位置</button>
+    </div>
+
+    <div class="message">
+        <img src="../pictures/massage.webp" width="40px" height="40px" style="margin-left: 45px;"><br>
+        <button id="demo1" type="button" onclick="myFunction1()">个人QQ</button>
+    </div>
+    <div class="wechat">
+        <img src="../pictures/WeChat.webp" width="40px" height="40px" style="margin-left: 45px;"><br>
+        <button id="demo2" type="button" onclick="myFunction2()">个人微信</button>
+    </div>
+    <br><br>
+    <p style="font-size: 40px; color: green; text-align: center;">给我留言</p>
+    <div class="box1">
+        <ul id="ul1">
+        </ul>
+        <input id="chat_input" type="text">
+        <input type="button" value="发送" onclick="m()">
+        <script type="text/javascript">
+            function m() {
+                var a = document.getElementById("chat_input");
+                var b = a.value;
+                console.log(b);
+                var c = document.createElement("li");
+                c.innerHTML = b;
+                c.style.textAlign = "left";
+                c.style.margin = "20px";
+                console.log(c.innerHTML);
+                var d = document.getElementById("ul1");
+                d.appendChild(c);
+                a.value = "";
+            }
+        </script>
+    </div>
+
+
+</body>
+<script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "郑州市惠济区";
+    }
+
+    function myFunction1() {
+        document.getElementById("demo1").innerHTML = "207295234";
+    }
+
+    function myFunction2() {
+        document.getElementById("demo2").innerHTML = "W207295234";
+    }
+</script>
+
+</html>

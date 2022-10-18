@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所学课程</title>
+</head>
+<style>
+    body {
+        width: 1000px;
+        margin: 0 auto;
+        font-size: 30px;
+        background: #3f4348;
+    }
+    
+    ul {
+        float: left;
+        list-style: none;
+        width: 200px;
+        margin-top: 100px;
+    }
+    
+    label {
+        display: block;
+        width: 200px;
+        height: 80px;
+        border-top: 1px solid #878e98;
+        border-bottom: 1px solid #33373d;
+        text-align: center;
+    }
+    
+    li {
+        line-height: 80px;
+        background: gray;
+        color: #fff;
+        border-radius: 10px;
+    }
+    
+    li:hover {
+        background-color: #33373d;
+        border-radius: 10px;
+    }
+    
+    input {
+        display: none;
+    }
+    
+    .h {
+        display: none;
+        background: #3f4348;
+        color: gray;
+    }
+    
+    input[type=checkbox]:checked+label+div {
+        display: block;
+        padding: 0 0 0 20px;
+    }
+    
+    .h {
+        width: 600px;
+        height: 400px;
+        background-color: #fff;
+    }
+    
+    .first {
+        float: left;
+        font-size: 20px;
+        margin-left: 20%;
+        color: rgb(31, 58, 209);
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    #per {
+        font-size: 20px;
+        float: left;
+        margin-left: 20px;
+        color: rgb(31, 58, 209);
+    }
+</style>
+
+<body>
+    <div class="first">
+        <a href="个人简介.html">
+            <div id="per">主页</div>
+        </a>
+    </div>
+    <a href="https://www.zzut.edu.cn/">
+        <div id="per">我的学校</div>
+    </a>
+    <a href="我的班级.html">
+        <div id="per">我的班级</div>
+    </a>
+    <a href="我的宿舍.html">
+        <div id="per">我的宿舍</div>
+    </a>
+    <a href="联系方式.html">
+        <div id="per">联系方式</div>
+    </a>
+    <a href="所学课程.html">
+        <div id="per">所学课程</div>
+    </a>
+    <a href="兴趣爱好.html">
+        <div id="per">兴趣爱好</div>
+    </a>
+    <a href="完成实验.html">
+        <div id="per">完成实验</div>
+    </a>
+    <br>
+    <br>
+    <ul>
+        <li><input type="checkbox" id="a" /><label for="a">Html</label>
+            <div class="h">
+                初学一些html，能设计一些简单的网页结构 已经完成的网页结构有如下几个<br>
+                <img src="../pictures/所学课程.jpg" width="200px" height="140px">
+            </div>
+        </li>
+        <li><input type="checkbox" id="b" /><label for="b">JavaWeb</label>
+            <div class="h">
+                JavaWeb 正在学习中，已经了解到了如何用Java连接web，实现访问
+
+            </div>
+        </li>
+        <li><input type="checkbox" id="c" /><label for="c">C++</label>
+            <div class="h">
+                学会一些简单的C语言代码，能够完成一个管理系统
+            </div>
+        </li>
+        <li><input type="checkbox" id="d" /><label for="d">Mysql</label>
+            <div class="h">
+                增删改查基本操作
+            </div>
+        </li>
+        <li><input type="checkbox" id="e" /><label for="e">Python</label>
+            <div class="h">
+                简单了解一点，可以做一些非实用的小东西
+            </div>
+        </li>
+        <li><input type="checkbox" id="f" /><label for="f">Java</label>
+            <div class="h">
+                类的创建，继承，封装，多态等
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>

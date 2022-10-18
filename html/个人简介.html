@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介</title>
+
+</head>
+<style>
+    .first {
+        float: left;
+        font-size: 20px;
+        margin-left: 40%;
+        color: rgb(31, 58, 209);
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    #per {
+        font-size: 20px;
+        float: left;
+        margin-left: 20px;
+        color: rgb(31, 58, 209);
+    }
+    
+    body {
+        background-image: url(../pictures/3.jpg);
+    }
+    
+    .p1 {
+        font-size: 80px;
+        float: left;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-left: 30%;
+    }
+    
+    .p4 {
+        float: left;
+        font-size: 80px;
+        color: rgb(221, 71, 71);
+        text-align: center;
+    }
+    
+    .p2 {
+        font-size: 25px;
+        float: left;
+        margin-top: -80px;
+        margin-left: 35%;
+        color: rgb(187, 130, 130);
+    }
+    
+    table {
+        margin: auto;
+        /* background-color: rgb(96, 96, 122); */
+        color: rgb(155, 150, 175);
+        font-size: 30px;
+    }
+    
+    #demo {
+        border: none;
+        background-color: rgb(225, 231, 236);
+        font-size: 30px;
+        color: rgb(167, 182, 196);
+    }
+    
+    embed {
+        height: 150px;
+        width: 300px;
+        background-color: aliceblue;
+    }
+</style>
+
+<body>
+    <h4 style="color: rgb(255, 255, 255); text-indent: 2em;">小魏个人简历</h4>
+    <div class="first">
+        <a href="个人简介.html">
+            <div id="per">主页</div>
+        </a>
+    </div>
+
+
+    <a href="https://www.zzut.edu.cn/">
+        <div id="per">我的学校</div>
+    </a>
+    <a href="我的班级.html">
+        <div id="per">我的班级</div>
+    </a>
+    <a href="我的宿舍.html">
+        <div id="per">我的宿舍</div>
+    </a>
+    <a href="联系方式.html">
+        <div id="per">联系方式</div>
+    </a>
+    <a href="所学课程.html">
+        <div id="per">所学课程</div>
+    </a>
+    <a href="兴趣爱好.html">
+        <div id="per">兴趣爱好</div>
+    </a>
+    <a href="完成实验.html">
+        <div id="per">完成实验</div>
+    </a>
+    <br>
+    <p class="p1">软件工程师-
+        <p class="p4">小魏</p>
+    </p>
+    <p class="p2">热衷探索，追求未知，热爱编程，成就人生</p>
+
+
+    <table border="0" cellpadding="0" width="500px" height="80px">
+
+        <form>
+
+            <tr>
+                <td>姓名: 魏明星</td>
+            </tr>
+            <tr>
+                <td>所在学校: <a href="https://www.zzut.edu.cn/" style="color: rgb(117, 84, 170);">点击这里你就知道了</a></td>
+            </tr>
+            <tr>
+                <td>性别:男</td>
+            </tr>
+
+            <tr>
+                <td>年龄: <button id="demo" type="button" onclick="myFunction()">Click Here</button>
+                </td>
+            </tr>
+            <tr>
+                <td>年级:大三</td>
+
+            </tr>
+
+        </form>
+    </table>
+    <div style="text-align: center">
+        <button onclick="playPause()">播放/暂停</button>
+        <button onclick="makeBig()">看不见？</button>
+        <button onclick="makeSmall()">碍事？</button>
+        <button onclick="makeNormal()">普通</button>
+        <br>
+        <video id="video1" width="410">
+        <source src="D:\pictures/1.mp4" type="video/mp4">
+        <!-- <source src="D:\pictures/1.ogg" type="video/ogg"> -->
+    </video>
+
+    </div>
+
+    <script>
+        var myVideo = document.getElementById("video1");
+
+        function playPause() {
+            if (myVideo.paused)
+                myVideo.play();
+            else
+                myVideo.pause();
+        }
+
+        function makeBig() {
+            myVideo.width = 860;
+        }
+
+        function makeSmall() {
+            myVideo.width = 120;
+        }
+
+        function makeNormal() {
+            myVideo.width = 420;
+        }
+    </script>
+
+
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "我还年轻,别问";
+        }
+    </script>
+
+    <embed src="../pictures/泡沫.mp3" autostart="true" loop="true">
+    </embed>
+</body>
+
+</html>
