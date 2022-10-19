@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <script type="text/javascript">
+        //跳转到指定页面
+        function tiao() {
+            clearInterval(myInterval);
+            window.open("个人简介.html", "_self");
+        }
+        //设置1秒跳转
+        setTimeout("tiao()", 1000);
+
+        function changeSec() {
+            $("myspan").innerText = parseInt($("myspan").innerText) - 1;
+        }
+        var myInterval = setInterval("changeSec()", 1000);
+
+        function $(id) {
+            return document.getElementById(id);
+        }
+    </script>
+</head>
+
+<body>
+    登录成功!<span id="myspan"></span>正在跳转
+</body>
+
+</html>
