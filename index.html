@@ -1,15 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>登录界面</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <script type="text/javascript">
+        //进行检查
+        function check() {
+            // window.alert($("username").value);
+            if ($("username").value == "xiaowei" && $("pwd").value == "123") {
+                return true;
+            } else {
+                alert("用户名或密码错误");
+                $("username").value = "";
+                $("pwd").value = "";
+                return false;
+
+            }
+        }
+        //获取文档对象
+        function $(id) {
+            return document.getElementById(id);
+        }
+    </script>
+
 </head>
+<style>
+    .user>input {
+        width: 150px;
+        height: 30px;
+        border-radius: 7px;
+        background-color: aliceblue;
+        margin-top: 100px;
+    }
+    
+    div {
+        text-align: center;
+    }
+    
+    .pwd>input {
+        width: 150px;
+        height: 30px;
+        border-radius: 7px;
+        margin-left: 13px;
+        background-color: aliceblue;
+    }
+    
+    .sub>input {
+        margin-left: 10px;
+        width: 100px;
+        border-radius: 5px;
+        background-color: beige;
+    }
+    
+    body {
+        background-color: rgb(94, 172, 146);
+    }
+</style>
 
 <body>
-    <a href="./html/个人简介.html">123 </a>
+    <form action="ok.html">
+        <div class="user">
+            用户名:<input type="text" id="username" /><br/></div><br>
+        <div class="pwd"> 密码:
+            <input type="password" id="pwd" /><br><br>
+            <div class="sub">
+                <input type="submit" value="登录" onclick="return check()" /></div>
+    </form>
+
 </body>
 
 </html>
